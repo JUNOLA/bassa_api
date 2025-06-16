@@ -1,8 +1,10 @@
+# Tradika by JintẽliaS
+
 # 🚀 French ↔ Bassa Translation API
 
 ## 📌 Overview
 
-This project provides a REST API powered by **FastAPI** for translating text between **French** and **Bassa** (a Bantu language spoken in Cameroon). The translation model is a custom-trained **MarianMT** model hosted on **Google Drive** and loaded dynamically at runtime.
+This project provides a REST API powered by **FastAPI** for translating text between **French** and **Bassa** (a Bantu language spoken in Africa). The translation model is a custom-trained **MarianMT** model hosted on **Google Drive** and loaded dynamically at runtime.
 
 It can be integrated into **Flutter mobile** and **web** apps via HTTP requests.
 
@@ -11,19 +13,19 @@ It can be integrated into **Flutter mobile** and **web** apps via HTTP requests.
 ## 🧱 System Architecture
 
 ```
-Flutter App (mobile/web)
-        ↓
-  [ HTTP POST Request ]
-        ↓
-┌──────────────────────┐
-│     FastAPI Server    │
-└──────────────────────┘
-        ↓
- [ Load MarianMT model ]
-        ↓
+   Flutter App (mobile/web)
+             ↓
+    [ HTTP POST Request ]
+             ↓
+   ┌──────────────────────┐
+   │     FastAPI Server   │
+   └──────────────────────┘
+             ↓
+    [ Load MarianMT model ]
+             ↓
    [ Tokenizer + Inference ]
-        ↓
- [ JSON Response with Translation ]
+             ↓
+[ JSON Response with Translation ]
 ```
 
 ---
