@@ -11,7 +11,7 @@ FOLDER_ID = "1jDdj95HR70OeK-gohnx05nFBMhF9iux0"
 download_model_from_drive(FOLDER_ID)
 
 # Charger le modèle
-model_path = "./model/checkpoint-3295"
+model_path = "./model_fr_bs/checkpoint-3295"
 tokenizer = MarianTokenizer.from_pretrained(model_path)
 model = MarianMTModel.from_pretrained(model_path)
 
