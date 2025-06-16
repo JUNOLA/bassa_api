@@ -1,5 +1,6 @@
 fastapi
 uvicorn
 transformers==4.40.1
+tokenizers==0.15.2
 torch
 gdown
