@@ -28,23 +28,15 @@ Flutter App (mobile/web)
 
 ---
 
-## 🧱 System Architecture
+## 📂 Project Structure
 
-```mermaid
-flowchart TD
-    A[Flutter App\n(mobile/web)]
-    B[HTTP POST Request]
-    C[FastAPI Server]
-    D[Load MarianMT Model]
-    E[Tokenizer + Inference]
-    F[JSON Response with Translation]
-    
-    A -->|Sends text and\ndirection| B
-    B -->|Routes to\n/translate endpoint| C
-    C -->|Checks if model\nis loaded| D
-    D -->|Initializes tokenizer\nand model| E
-    E -->|Generates translation\nusing transformer| F
-    F -->|Returns translated text\nin JSON format| A
+```
+bassa_translate_api/
+├── main.py                # FastAPI backend
+├── utils.py               # Downloads model from Google Drive
+├── requirements.txt       # Python dependencies
+├── start.sh               # Render startup script
+└── model/                 # Directory for downloaded model
 ```
 
 ---
